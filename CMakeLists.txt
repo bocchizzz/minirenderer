@@ -10,4 +10,4 @@ add_executable(MiniRenderer main.cpp load_model.cpp rasterizer.cpp texture.cpp)
 
 include_directories(${PROJECT_SOURCE_DIR}/include, /usr/local/include, ./include)
 
-target_link_libraries(MiniRenderer ${OpenCV_LIBRARIES})
+target_link_libraries(MiniRenderer ${OpenCV_LIBRARIES} pthread)

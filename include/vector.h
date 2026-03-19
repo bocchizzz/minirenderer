@@ -199,6 +199,14 @@ class vec3f
         result.z = this->z - op2.z;
         return result;
     }
+    vec3f operator-(const vec3f& op2) const
+    {
+        vec3f result{};
+        result.x = this->x - op2.x;
+        result.y = this->y - op2.y;
+        result.z = this->z - op2.z;
+        return result;
+    }
     vec3f operator*(float m)
     {
         vec3f result{};
